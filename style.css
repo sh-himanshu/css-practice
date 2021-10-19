@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+  --color-light: #f5f5f5;
+  --color-dark: #1b1b1b;
+  --color-hello: #00d1b2;
+  --color-grey: grey;
+
+  /* Theme */
+  --theme-primary: var(--color-light);
+  --theme-secondary: var(--color-dark);
+  --theme-highlight: #1b1b1bd3;
+}
+
+.dark {
+  --theme-primary: var(--color-dark);
+  --theme-secondary: var(--color-light);
+  --theme-highlight: var(--color-light);
+  --color-hello: #1b574e;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--theme-primary);
+  color: var(--theme-secondary);
+  padding: 0.9rem;
+  transition: 0.3s ease;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.theme-toggle {
+  color: inherit;
+}
+
+.spin {
+  transform: rotate(180deg);
+}
+
+.logo span {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.container h1 {
+  font-family: monospace;
+  font-size: 2.8rem;
+  margin-top: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.emoji {
+  font-size: 2.2rem;
+}
+
+.para p:nth-child(-n + 2) {
+  font-size: 20px;
+  margin: 0;
+}
+
+.para p:nth-child(3) {
+  font-size: 12.8px;
+  color: var(--color-grey);
+  margin-bottom: 1.5rem;
+}
+
+.bold {
+  color: var(--theme-secondary);
+  font-weight: bold;
+  font-size: 13px;
+  margin-left: 3px;
+}
+
+.highlight {
+  background-color: var(--theme-highlight);
+  color: var(--theme-primary);
+  padding: 0 2px;
+}
+
+.hello-btn {
+  background-color: var(--color-hello);
+  height: 2.5rem;
+  width: 6.5rem;
+  border-radius: 0.35rem;
+  margin-right: 3px;
+  border: 0;
+  font-size: 16px;
+  color: var(--theme-secondary);
+}
+
+.hello-btn:active {
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.social-links a i {
+  color: var(--theme-secondary);
+  transform: scale(1.5);
+}
+
+.social-links {
+  padding: 0;
+  display: inline-flex;
+  width: 180px;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
